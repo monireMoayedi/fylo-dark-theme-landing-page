@@ -1,0 +1,329 @@
+.container {
+  margin: 0 auto;
+  padding: 0 3rem;
+  max-width: var(--max-width);
+}
+
+#navbar .logo {
+  width: 160px;
+}
+
+.showcase--bg-img {
+  height: auto;
+  background-size: var(--max-width);
+}
+
+#showcase {
+  width: 60vw;
+}
+
+#what {
+  width: 75vw;
+  padding-top: 6rem;
+  grid-gap: 6rem;
+}
+
+#what h2 {
+  font-size: 1.1rem;
+}
+
+#what img {
+  display: inline-block;
+  height: 60px;
+}
+
+#how {
+  grid-template-columns: 1fr;
+  margin: 8rem auto;
+}
+
+#how .how__img {
+  width: 80%;
+  display: inline-block;
+  margin: auto;
+}
+#how .how__text {
+  text-align: center;
+  margin-left: 0;
+}
+#how .how__text p {
+  padding-right: 0;
+}
+#how .how__text h2 {
+  font-size: 2.3rem;
+  padding-right: 0;
+}
+
+#testimonial__container {
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+}
+
+#testimonial__container
+  .testimonial__container-elm
+  .testimonial__container-elm-subject {
+  display: flex;
+  /* justify-content:; */
+}
+
+.signup__text {
+  padding: 0.5rem 3rem;
+}
+
+/* #signup .signup-container {
+  max-width: 82vw;
+} */
+
+#signup .signup-container .signup-text {
+  text-align: center;
+  /* margin: auto;
+  margin-top: 1.5rem;
+  padding: 1.25rem 6rem;
+  /* width: 60%; */
+}
+#signup .signup-container .btn--gradiant-color {
+  /* margin: auto;
+  margin-top: 1rem; */
+}
+
+/* @media (max-width: 960px) and (min-width: 768px) {
+  #signup .signup-container {
+    max-width: 82vw;
+  }
+} */
+
+@media (max-width: 1100px) and (min-width: 601px) {
+  #main-footer .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+    padding-bottom: 6rem;
+  }
+  #main-footer .footer__container .footer__about,
+  #main-footer .footer__container .footer__contact-us {
+    justify-self: center;
+    text-align: center;
+  }
+  #main-footer .footer__container .footer__social-icons {
+    justify-self: center;
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__container {
+    padding: 3rem 0;
+  }
+
+  #showcase {
+    width: 70vw;
+  }
+  #showcase h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 600px) {
+  #navbar .logo {
+    width: 130px;
+  }
+
+  #navbar ul li {
+    padding-left: 2rem;
+  }
+
+  #showcase {
+    width: 80vw;
+  }
+  #showcase p {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  #what {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #signup .signup-container {
+    max-width: 82vw;
+  }
+
+  #main-footer .footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0rem;
+    padding-bottom: 4rem;
+  }
+
+  #main-footer .footer__container div,
+  #main-footer .footer__container .footer__contact .footer__contact__phone,
+  #main-footer .footer__container .footer__contact .footer__contact__mail,
+  #main-footer .footer__container .footer__about,
+  #main-footer .footer__container .footer__contact-us {
+    /* width: 100%; */
+    margin-bottom: 1.8rem;
+    text-align: left;
+    justify-self: start;
+  }
+  #main-footer .footer__container .footer__contact {
+    justify-self: start;
+  }
+
+  #main-footer .footer__container .footer__contact-us {
+    margin-bottom: 3rem;
+  }
+
+  #main-footer .footer__container .footer__about {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #main-footer .footer__container .footer__social-icons {
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .navbar__container {
+    padding: 2rem 0;
+  }
+
+  #navbar .logo {
+    width: 90px;
+  }
+
+  #navbar ul {
+    /* font-size: 0.8rem; */
+  }
+  #navbar ul li {
+    padding-left: 1.5rem;
+  }
+
+  #showcase h1 {
+    font-size: 1.5rem;
+  }
+  #showcase p {
+    font-size: 0.8rem;
+  }
+  .btn--gradiant-color {
+    padding: 0.8rem 4.5rem;
+  }
+
+  #how .how__img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  /* #how .how__img img {
+    width: 100%;
+    margin: 2rem 0;
+} */
+  #how .how__text h2 {
+    font-size: 1.25rem;
+    padding: 0.2rem;
+  }
+  #how .how__text {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  #testimonial__container {
+    grid-gap: 2rem;
+    margin: 1rem;
+  }
+
+  #testimonial__container::before {
+    background-size: 2rem;
+    top: -20px;
+    left: 5px;
+  }
+
+  #testimonial__container .testimonial__container-elm {
+    font-size: 0.6rem;
+    line-height: 1.8;
+    padding: 1.5rem;
+  }
+  #testimonial__container
+    .testimonial__container-elm
+    .testimonial__container-elm-subject {
+    padding-top: 0;
+    font-size: 0.45rem;
+  }
+
+  #testimonial__container
+    .testimonial__container-elm
+    .testimonial__container-elm-subject
+    h3 {
+    font-size: 0.6rem;
+  }
+
+  #testimonial__container
+    .testimonial__container-elm
+    .testimonial__container-elm-subject
+    img {
+    width: 25px;
+    height: 25px;
+    margin: auto 0;
+    line-height: 1.5;
+  }
+  #signup {
+    position: relative;
+    top: 30px;
+  }
+  #signup .signup-container {
+    max-width: 88vw;
+    padding: 1.5rem;
+  }
+  .signup__heading {
+    font-size: 1.2rem;
+  }
+  .signup__text {
+    padding: 0.5rem 0;
+    font-size: 14px;
+  }
+  #signup .signup-container .signup-text {
+    width: 100%;
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 1rem 2.5rem;
+  }
+
+  #signup .signup-container .btn--gradiant-color {
+    /* padding: 1.25rem 6.6rem; */
+    width: 100%;
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 1rem 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  #main-footer::before {
+    top: -240px;
+  }
+  #main-footer .footer__container {
+    padding-bottom: 2rem;
+    /* font-size: 0.5rem; !important */
+  }
+  #main-footer .footer__container .footer__about,
+  #main-footer .footer__container .footer__contact-us,
+  #main-footer .footer__container .footer__social-icons {
+    font-size: 1rem;
+  }
+  #main-footer .footer__container p {
+    font-size: 0.9rem;
+  }
+}

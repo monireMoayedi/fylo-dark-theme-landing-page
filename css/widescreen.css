@@ -1,0 +1,47 @@
+@media (min-width: 2000px) {
+  :root {
+    --max-width: calc(80vw);
+  }
+}
+@media (max-width: 1800px) {
+  :root {
+    --max-width: calc(100vw);
+  }
+}
+
+.showcase--bg-img {
+  background: var(--Dark-Blue) url(/images/bg-curvy-desktop.svg) no-repeat
+    center bottom;
+  background-position-y: 610px;
+  background-size: 2200px;
+  height: 1100px;
+}
+#showcase {
+  width: auto;
+  max-width: 1200px;
+}
+* {
+  font-size: 22px;
+}
+#what {
+  width: auto;
+  max-width: 1440px;
+  margin: 6rem auto;
+}
+
+#how {
+  padding: 4rem 0;
+}
+
+#signup .signup-container {
+  max-width: calc(60vw);
+}
+
+#signup .signup-container .signup-text {
+  width: 700px;
+  border-radius: 50px;
+}
+
+.btn--gradiant-color {
+  border-radius: 50px;
+}
